@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPregunta"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:text="Hola como estas?"
+        android:textStyle="bold"
+        android:textColor="@color/colorAlice"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etRespuesta"
+        android:paddingBottom="4dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:textSize="13dp"
+        android:text="La integridad y la confiabilidad es una de nuestras principales valores, por ello en Banesco utilizamos las últimas tecnologías para proteger la confidencialidad de nuestros clientes, manejando honestamente negocios, actuando de manera congruente entre lo que somos, decimos y hacemos. La integridad y la confiabilidad es una de nuestras principales valores, por ello en Banesco utilizamos las últimas tecnologías para proteger la confidencialidad de nuestros clientes, manejando honestamente negocios, actuando de manera congruente entre lo que somos, decimos y hacemos. La integridad y la confiabilidad es una de nuestras principales valores, por ello en Banesco utilizamos las últimas tecnologías para proteger la confidencialidad de nuestros clientes, manejando honestamente negocios, actuando de manera congruente entre lo que somos, decimos y hacemos."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTipoPregunta"
+        android:paddingLeft="10dp"
+        android:text="tipoPregunta"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10dp"/>
+</LinearLayout>
+

@@ -1,0 +1,7 @@
+Tipo de notificaciones
+1. Citas
+2. Servicio
+3. Evento
+4. Eventualidad
+
+Agregar campo codigo a la entidad que contenga el codigo_id de la cita, servicio o evento

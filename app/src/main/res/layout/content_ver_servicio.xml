@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.app.alice.activity.VerServicioActivity"
+    tools:showIn="@layout/activity_ver_servicio">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/imageView"
+            android:layout_weight="2.42" />
+
+        <LinearLayout
+            android:id="@+id/area_servicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pediatria"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="El Servicio de Pediatría la clinica la trinidad establece acciones prioritarias encaminadas a un SERVICIO DE PEDIATRÍA ORIENTADO AL PACIENTE (y su familia) y en el que se conjuguen especialmente los valores de humanización, sensibilidad, comunidad, colaboración, liderazgo y excelencia en un misma clinica, el segundo en importancia de la ciudad de Barquisimeto."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:id="@+id/textView3"
+                android:textColor="@color/colorBlackFull"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_dr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Dr. Jose Joselito Perez Perez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:paddingTop="10dp"
+                android:id="@+id/textView4"
+                android:textColor="@color/colorBlackFull"/>/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_horario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Horario: Lunes-Viernes de 8:00am a 12:pm y 2:00pm a 6:00pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:id="@+id/textView5"
+                android:textColor="@color/colorBlackFull"/>/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/area_consultorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Consultorio: 2-4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:id="@+id/textView6"
+                android:textColor="@color/colorBlackFull"/>/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/area_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Telefono: 0251-444-4444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:id="@+id/textView7"
+                android:textColor="@color/colorBlackFull"/>/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

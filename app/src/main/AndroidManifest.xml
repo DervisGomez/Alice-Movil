@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.app.alice">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".modelo.DAOApp"
+        android:allowBackup="true"
+        android:icon="@drawable/alice_mini"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".service.NotificacionServicio">
+            <intent-filter>
+                <action android:name=".service.NotificacionServicio" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".service.IniciadorServicio">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+       <activity
+            android:name=".activity.MainActivity"
+            android:label="Alice"
+           android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+        <activity android:name=".activity.InicioActivity"
+            android:label="Alice"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SolicitudCitaActivity"
+            android:label="Solicitud de Cita" />
+        <activity
+            android:name=".activity.IniciarSesionActivity"
+            android:label="Iniciar Sesión" />
+        <activity
+            android:name=".activity.VerPerfilActivity"
+            android:label="Datos del Usuario" />
+        <activity
+            android:name=".activity.ListaCitasActivity"
+            android:label="Citas" />
+        <activity
+            android:name=".activity.ListaNotificacionActivity"
+            android:label="Alertas" />
+        <activity
+            android:name=".activity.SuscribirseActivity"
+            android:label="Suscribirse" />
+        <activity
+            android:name=".activity.CambiarContrasennaActivity"
+            android:label="Cambiar Contraseña" />
+        <activity
+            android:name=".activity.VerEventoActivity"
+            android:label="Evento" />
+        <activity
+            android:name=".activity.VerServicioActivity"
+            android:label="Servicio" />
+        <activity
+            android:name=".activity.VerCitaActivity"
+            android:label="Cita" />
+        <activity
+            android:name=".activity.VerNoticiaActivity"
+            android:label="Noticia" />
+        <activity android:name=".activity.ValorarServicioActivity"
+            android:label="Valorar Servicio"/>
+        <activity android:name=".activity.BuscarTodoActivity"
+            android:label="Buscar"/>
+        <activity android:name=".activity.BuscarCitaActivity"
+            android:label="Buscar Cita"></activity>
+        <activity android:name=".activity.ValorarServicioParteiiActivity"
+            android:label="Valorar Servicio"/>
+        <activity
+            android:name=".activity.ListaTipoServiciosActivity"
+            android:label="Tipos de servicios"/>
+        <activity
+            android:name=".activity.ListaEspecialistasActivity"
+            android:label="descripcion de servicio por parametro"/>
+        <activity
+            android:name=".activity.VerEspecialistaActivity"
+            android:label="Servicio"/>
+        <activity
+            android:name=".activity.PreguntasFrecuentesActivity"
+            android:label="Preguntas Frecuentes"/>
+
+        <activity
+            android:name=".activity.ContactanosActivity"
+            android:label="Contactanos"/>
+        <activity
+            android:name=".activity.VerEventualidadActivity"
+            android:label="Alerta"/>
+        <activity
+            android:name=".activity.VerHorarioActivity"
+            android:label="Horario"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/grupo1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_iniciar_sesion"
+            android:icon="@drawable/iniciarsesion"
+            android:title="Iniciar Sesión" />
+    </group>
+    <group android:id="@+id/grupo2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notificaciones"
+            android:icon="@drawable/notificacion"
+            android:title="Notificaciones" />
+        <item
+            android:id="@+id/nav_ver_perfil"
+            android:icon="@drawable/perfil"
+            android:title="Ver Perfil" />
+    </group>
+    <group>
+            <item
+                android:id="@+id/nav_pregruntas_frecuentes"
+                android:icon="@drawable/preguntasfrecuentes"
+                android:title="Preguntas Frecuentes" />
+
+            <item
+                android:id="@+id/nav_contactanos"
+                android:icon="@drawable/contactanos"
+                android:title="Contactanos" />
+
+
+    </group>
+    <group android:id="@+id/grupo3" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_cerrar_sesion"
+            android:icon="@drawable/salir"
+            android:title="Cerrar Sesión" />
+    </group>
+
+
+</menu>
